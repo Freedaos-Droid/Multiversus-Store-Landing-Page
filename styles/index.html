@@ -5,35 +5,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiversus Landing Page</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <script src="https://kit.fontawesome.com/4f576e2002.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="flex items-center justify-between px-6 py-4">
 
-    <!-- Header Section  -->
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <img src="../images/multiversusLogo.png" alt="Multiversus Logo" class="w-40">
+            </div>
 
-    <head>
-        <div>
+            <!-- Navbar -->
+            <nav class="flex space-x-4">
+                <a href="#" class="bg-gray-200 px-3 py-1 rounded hover:text-blue-800 hover:underline">Home</a>
+                <a href="#" class="bg-gray-200 px-3 py-1 rounded hover:text-blue-800 hover:underline">About</a>
+                <a href="#" class="bg-gray-200 px-3 py-1 rounded hover:text-blue-800 hover:underline">Contact Us</a>
+                <a href="#" class="bg-gray-200 px-3 py-1 rounded hover:text-blue-800 hover:underline">Games</a>
+                <a href="#" class="bg-gray-200 px-3 py-1 rounded hover:text-blue-800 hover:underline">Store</a>
+            </nav>
+
+            <!-- Buttons -->
+            <div class="flex space-x-2">
+                <button class="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600">Sign Up</button>
+                <button class="border border-gray-500 text-black px-4 py-1 rounded hover:bg-blue-600 ">Login In</button>
+            </div>
 
         </div>
-    </head>
+    </header>
 
-    <!-- Main Section -->
+
+
+
+    <!-- Main Section  -->
     <main>
-        <section>
-            <div>
+        <!-- welcome section  -->
+        <section style="background-image: url(../images/bcgImg.png);" class="bg-cover bg-center h-screen ">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent text-center flex flex-col">
+                <h1 class="text-white text-6xl font-extrabold m-64 mb-7 ">Welcome To Multiversus</h1>
+                <p class="text-white text-2xl font-extrabold">Now officially free to play for all <br>
+                    Xbox and Playstation users</p>
 
+                <!-- button  -->
+                <div>
+                    <button class="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600 mt-10 ">Get In
+                        Now!</button>
+                </div>
             </div>
         </section>
-    </main>
+
+        <!-- why multiversus? section  -->
+        <section>
+            <div>
+                <div class="mt-7 text-center text-black">
+                    <h2 class="font-extrabold text-4xl ">
+                        Why Multiversus?
+                    </h2>
+                    <p class="mt-4 text-[17px] ">We are the official xbox and playstation partner in Nigeria that<br>
+                        provides official video games. </p>
+                </div>
+
+                <!-- icons  -->
+                <div class="text-[19px] flex justify-between mt-11 px-40 ">
+
+                    <div class="flex flex-col items-center text-center">
+                        <i class="fas fa-gamepad text-4xl mb-2"></i>
+                        <p class="font-semibold">5000+ video games <br> available</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <i class="fas fa-cloud text-4xl mb-2"></i>
+                        <p class="font-semibold">Trusted by 100,000+ <br> customers</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <i class="fab fa-playstation text-4xl mb-2"></i>
+                        <p class="font-semibold">Available for all <br> Playstation consoles</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <i class="fab fa-xbox text-4xl mb-2"></i>
+                        <p class="font-semibold">Available for all <br> Xbox consoles</p>
+                    </div>
+
+                </div>
+        </section>
+        <!-- games genre section   -->
+        <section>
+            <div>
+                <div class="flex flex-row justify-between px-16 mt-20 mb-5 ">
+                    <h2 class="text-4xl font-bold ">Games Genres</h2>
+                    <a href="#" class="text-blue-500 font-bold hover:underline">See all genre</a>
+                </div>
+
+
+                <div class="grid grid-cols-6 gap-4">
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-2 text-center">
+                        <img src="../images/stardew valley.png" alt="Stardew Valley" class="w-full h-36  object-cover rounded-md mb-2">
+                        <p class="text-sm font-medium">Strategy</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-2 text-center">
+                        <img src="../images/halo5.png" alt="Halo 5" class="w-full h-36 object-cover rounded-md mb-2">
+                        <p class="text-sm font-medium">FPS</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-2 text-center">
+                        <img src="../images/cyberpunk edgerunners.png" alt="Cyberpunk Edgerunners" class="w-full h-36 object-fill rounded-md mb-2">
+                        <p class="text-sm font-medium">RPG</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-2 text-center">
+                        <img src="../images/valianthearts.png" alt="valiant Hearts" class="w-full h-36 object-cover rounded-md mb-2">
+                        <p class="text-sm font-medium">Puzzle</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-2 text-center">
+                        <img src="../images/the witcher.png" alt="The Witcher Wild Hunt"
+                            class="w-full h-36  object-cover rounded-md mb-2">
+                        <p class="text-sm font-medium">Role Playing</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-2 text-center">
+                        <img src="../images/fifa 23.png" alt="Fifa 2023" class="w-full h-36  object-cover rounded-md mb-2">
+                        <p class="text-sm font-medium">Sports</p>
+                    </div>
+                </div>
+        </section>
+    
+            <!-- best seller games section  -->
+                    <section class="py-8 px-4">
+  <h2 class="text-xl font-semibold mb-4">Best Seller Games</h2>
+  <div class="grid grid-cols-4 gap-4">
+
+    <!-- game cards -->
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/minecraft.png" alt="Minecraft" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">Minecraft</h3>
+      <p class="text-sm text-gray-500">Rp 260.000</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/asphalt9.png" alt="Asphalt 9 Legends" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">Asphalt 9: Legends</h3>
+      <p class="text-sm text-blue-500">Free Download</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/another witcher 3.png" alt="The Witcher 3" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">The Witcher 3</h3>
+      <p class="text-sm text-gray-500">Rp 220.000</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/surviving mars.png" alt="Surviving Mars" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">Surviving Mars</h3>
+      <p class="text-sm text-gray-500">Rp 440.000</p>
+    </div>
+  </div>
+</section>
+
+<!-- Popular games  -->
+ <section class="py-8 px-4">
+  <div class="flex justify-between items-center mb-4">
+    <h2 class="text-xl font-semibold">Popular Games</h2>
+    <a href="#" class="text-blue-500 text-sm hover:underline">Browse all games</a>
+  </div>
+  <div class="grid grid-cols-4 gap-4">
+    
+    <!-- top cards -->
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/gtav.png" alt="GTA V" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">GTA V</h3>
+      <p class="text-sm text-blue-500">Rp 354.000</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/roblox.png" alt="ROBLOX" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">ROBLOX</h3>
+      <p class="text-sm text-blue-500">Free Download</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/NBA_2K22.png" alt="NBA 2K22" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">NBA 2K22</h3>
+      <p class="text-sm text-blue-500">Rp 297.000</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/dead by daylight.png" alt="Dead by Daylight" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">Dead by Daylight</h3>
+      <p class="text-sm text-blue-500">Rp 214.500</p>
+    </div>
+
+    <!-- bottom cards -->
+     <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/ark survivial evolved.png" alt="ARK: Survival Evolved" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">ARK: Survival Evolved</h3>
+      <p class="text-sm text-blue-500">Rp 430.000</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/rocket league.png" alt="Rocket League" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">Rocket League</h3>
+      <p class="text-sm text-blue-500">Free Download</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/forza horizon.png" alt="Forza Horizon 5" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">Forza Horizon 5</h3>
+      <p class="text-sm text-blue-500">Rp 356.000</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4">
+      <img src="../images/EGS_CitiesSkylines.png" alt="Cities: Skylines" class="w-full h-40 object-cover rounded-md mb-2">
+      <h3 class="font-medium">Cities: Skylines</h3>
+      <p class="text-sm text-blue-500">Rp 590.000</p>
+    </div>
+
+   
+  </div>
+</section>
+
+
 
     <!-- Footer Section  -->
-    <footer>
-        <section>
-            <div>
+  <footer class="bg-black text-gray-300 py-10 px-4">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <!-- logo -->
+<div>
+  <img src="../images/multiversusLogo.png" alt="Multiversus Logo" class="h-10 bg-white px-4 py-0.5 rounded ">
+</div>
 
-            </div>
-        </section>
-    </footer>
+    <!-- menu -->
+    <div>
+      <h3 class="font-semibold mb-2">Menu</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#" class="hover:underline">Order tracking</a></li>
+        <li><a href="#" class="hover:underline">Store location</a></li>
+        <li><a href="#" class="hover:underline">Return policy</a></li>
+        <li><a href="#" class="hover:underline">Support</a></li>
+      </ul>
+    </div>
+
+    <!-- resources -->
+    <div>
+      <h3 class="font-semibold mb-2">Resources</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#" class="hover:underline">Blog</a></li>
+        <li><a href="#" class="hover:underline">Help center</a></li>
+        <li><a href="#" class="hover:underline">Documentation</a></li>
+        <li><a href="#" class="hover:underline">Guidelines</a></li>
+      </ul>
+    </div>
+
+    <!-- social media -->
+    <div>
+      <h3 class="font-semibold mb-2">Follow us on:</h3>
+      <div class="flex space-x-4 text-xl">
+        
+        <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-white"><i class="fab fa-twitch"></i></a>
+        <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="mt-10 text-center text-sm text-gray-500 border-t border-gray-700 pt-4">
+    © 2022 Exstore
+  </div>
+</footer>
+
 </body>
 
 </html>
